@@ -1,6 +1,6 @@
 # AutomaticLossWeightingPyTorch
 PyTorch implementation of
-[Weigh Losses
+[Multi-Task Learning Using Uncertainty to Weigh Losses
 for Scene Geometry and Semantics](https://arxiv.org/abs/1705.07115 "arXiv abstract link") weighted loss module.
 
 # Who Should Use This?
