@@ -1,10 +1,19 @@
 # AutomaticLossWeightingPyTorch
+[![CI](https://github.com/AidasLiaudanskas/AutomaticLossWeightingPyTorch/actions/workflows/ci.yml/badge.svg)](https://github.com/AidasLiaudanskas/AutomaticLossWeightingPyTorch/actions/workflows/ci.yml)
+
 PyTorch implementation of
 [Multi-Task Learning Using Uncertainty to Weigh Losses
 for Scene Geometry and Semantics](https://arxiv.org/abs/1705.07115 "arXiv abstract link") weighted loss module.
 
+Originally published 2019-08-02. Modernized (bug fixes, tests, packaging, CI) 2026-07-07.
+
 # Who Should Use This?
 Anyone who has a multiple output prediction problem and wants to balance losses automatically. 
+
+# Installation
+```
+pip install git+https://github.com/AidasLiaudanskas/AutomaticLossWeightingPyTorch
+```
 
 # Example Usage
 
@@ -25,7 +34,7 @@ def train(*args, **kwargs):
             'params': model.parameters(),
             'lr': 5e-4
         }, {
-            'params': weighed_criterion.parameters(),
+            'params': weighted_criterion.parameters(),
             'lr': 1e-1 # High learning rate for quick adaptation
         }
     ]

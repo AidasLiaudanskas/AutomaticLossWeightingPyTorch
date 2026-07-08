@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automatic-loss-weighting"
+version = "0.1.0"
+description = "PyTorch implementation of automatic multi-task loss weighting via homoscedastic uncertainty (Kendall et al., 2017)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Aidas Liaudanskas" }]
+requires-python = ">=3.8"
+dependencies = ["torch"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.urls]
+Repository = "https://github.com/AidasLiaudanskas/AutomaticLossWeightingPyTorch"
+
+[tool.setuptools]
+py-modules = ["weighted_loss"]
