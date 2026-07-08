@@ -5,6 +5,8 @@ PyTorch implementation of
 [Multi-Task Learning Using Uncertainty to Weigh Losses
 for Scene Geometry and Semantics](https://arxiv.org/abs/1705.07115 "arXiv abstract link") weighted loss module.
 
+Originally published 2019-08-02. Modernized (bug fixes, tests, packaging, CI) 2026-07-07.
+
 # Who Should Use This?
 Anyone who has a multiple output prediction problem and wants to balance losses automatically. 
 
